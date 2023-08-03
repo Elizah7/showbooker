@@ -2,10 +2,9 @@
   <div class="cont ticket-booking">
 
     <div class="booking_date">
-
       <div class="ticket_date">
         <h4>Select Date:</h4>
-        <div *ngFor="let date of getDates()" class="date-wrapper">
+        <div *ngFor="let date of getDates(); let index = index" class="date-wrapper">
           <button
             class="btn custom-btn"
             [class.selected]="selectedDateIndex === index"
