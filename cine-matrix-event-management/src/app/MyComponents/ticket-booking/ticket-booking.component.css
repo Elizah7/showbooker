@@ -1,0 +1,96 @@
+.cont{
+    display: flex;
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+}
+
+.booking_date{
+    width: 30%;
+}
+
+.ticket_date{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+
+
+}
+.cinema{
+ width:70%;
+}
+
+.cinema_hall{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .ticket-booking {
+    width: 80%;
+    background-color: #021527;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .booking-date,
+  .cinema,
+  .language {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-date,
+  .show-times,
+  .language-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .btn {
+    border-radius: 8px;
+  }
+  
+  .cinema-card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #021527;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  width: 100%;
+  }
+  
+  .cinema-hall-name {
+    margin-top: 0;
+  }
+  
+  .show-time {
+    margin-bottom: 10px;
+  }
+  
+  .language-option {
+    margin-right: 10px;
+  }
+  
+  /* Add more styles and adjust the colors, fonts, and layout as per your preference */
+  .booking_date {
+    /* Set the booking_date div as a flex container */
+    display: flex;
+    width: 30%;
+  }
+.card{
+    padding: 10px;
+}
+  
+ 
+  .custom-btn{
+    background-color: #113d67;
+    color: white;
+  }

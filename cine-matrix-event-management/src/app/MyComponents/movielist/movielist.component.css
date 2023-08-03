@@ -1,0 +1,24 @@
+.cardimg{
+    width: 100%;
+    height: 40%;
+}
+.a_link{
+    text-decoration: none;
+}
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .card-img {
+    /* width: 70%; */
+    height: auto;
+    margin: auto;
+  }
+  
+  .card{
+    background-color: #021527;
+    color: rgb(251, 248, 248);
+  }

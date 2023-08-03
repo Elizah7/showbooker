@@ -1,0 +1,44 @@
+<div>
+  <div class="cont ticket-booking">
+
+    <div class="booking_date">
+
+      <div class="ticket_date">
+        <h4>Select Date:</h4>
+        <div *ngFor="let date of getDates()" class="date-wrapper">
+          <button
+            class="btn custom-btn"
+            [class.selected]="selectedDateIndex === index"
+            (click)="onDateSelect(date, index)"
+          >
+            {{ date }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cinema">
+      <h4>Select Cinema Hall and Show:</h4>
+      <div class="cinema-card">
+        <div *ngFor="let cinema of cinemas" class="card">
+          <h6 class="cinema-hall-name">Cinema Hall: {{ cinema.name }}</h6>
+          <div class="show-times">
+            <h6>Show Times:</h6>
+            <div *ngFor="let show of cinema.shows" class="show-time">
+              <button class="btn custom-btn" (click)="onShowTimeSelect(show.time)">{{ show.time }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="language">
+        <h4>Select Language:</h4>
+        <div class="language-options">
+          <div *ngFor="let language of languages" class="language-option">
+            <button class="btn btn-success" (click)="onLanguageSelect(language)">{{ language }}</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" (click)="onBookNow()">Book Now</button>
+    </div>
+  </div>
+</div>

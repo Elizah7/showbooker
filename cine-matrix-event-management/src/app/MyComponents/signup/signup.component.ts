@@ -19,22 +19,21 @@ export class SignupComponent {
   signUp() {
     this.apiService.signUp(this.formData)
       .subscribe(
-        // response => {
-        //   // Handle success response
-        //   console.log(response);
-        //   // Reset form
-        //   this.formData = {
-        //     name: '',
-        //     email: '',
-        //     password: '',
-        //     confirmPassword: ''
-        //   };
-        // },
-        // error => {
-        //   // Handle error response
-        //   console.error(error);
-        // }
+        response => {
+          // Handle success response
+          console.log(response);
+          // Reset form
+          this.formData = {
+            name: '',
+            email: '',
+            password: '',
+            confirmPassword: ''
+          };
+        },
+        error => {
+          // Handle error response
+          console.error(error);
+        }
       );
   }
 }
-

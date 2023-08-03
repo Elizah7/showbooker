@@ -17,21 +17,21 @@ export class LoginComponent {
 
   login() {
     
-    // this.apiService.login(this.formData)
-    //   .subscribe(
-    //     // response => {
-    //     //   // Handle success response
-    //     //   console.log(response);
-    //     //   // Reset form
-    //     //   this.formData = {
-    //     //     email: '',
-    //     //     password: ''
-    //     //   };
-    //     // },
-    //     // error => {
-    //     //   // Handle error response
-    //     //   console.error(error);
-    //     // }
-    //   );
+    this.apiService.login(this.formData)
+      .subscribe(
+        response => {
+          // Handle success response
+          console.log(response);
+          // Reset form
+          this.formData = {
+            email: '',
+            password: ''
+          };
+        },
+        error => {
+          // Handle error response
+          console.error(error);
+        }
+      );
   }
 }

@@ -1,0 +1,48 @@
+
+  .footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    margin-bottom: 15px;
+  }
+  
+  .footer ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    color: #007bff;
+  }
+  /* Assuming the class for the footer is 'footer' */
+.footer {
+    background-color: #f0f0f0; /* Replace with your desired background color */
+    padding: 30px 0; /* Add some padding to the footer content */
+    color: #333; /* Set the text color */
+  }
+  
+  /* Style for the footer links */
+  .footer a {
+    color: #555;
+  }
+  
+  /* Change link color on hover */
+  .footer a:hover {
+    color: #007bff; /* Replace with your desired link hover color */
+  }
+  .custom-container{
+    background-color: #01080e;
+    color: #605f5f;
+  }
+  

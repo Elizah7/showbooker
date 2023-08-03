@@ -1,0 +1,97 @@
+<div class="cont">
+    <div class="movie-details" [style.background-image]="'url(' + movie.image + ')'">
+      <div class="">
+        <div class="row">
+          <div class="col-md-4">
+            <img [src]="movie.image" alt="{{ movie.title }}" class="img-fluid">
+          </div>
+          <div class="col-md-8">
+            <h2>{{ movie.title }}</h2>
+            <p>Language: {{ movie.language }}</p>
+            <p>Direct: {{ movie.director }}</p>
+            <p>Ratings: {{ getAverageRating(movie.ratings) | number: '1.1-1' }}</p>
+            <div class="rate-section">
+              <h3>Rate This Movie</h3>
+              <button class="btn btn-primary" (click)="openModal()">Add Rating</button>
+            </div>
+            <button class="btn btn-primary custom-btn" (click)="onButtonClick()">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- List of videos related to the movie -->
+    <!-- <div class="row">
+        <div class="col-md-6-w-100">
+          <h3>Related Videos</h3>
+          <div class="videos-list">
+            <div *ngFor="let video of moviesvideos.items" class="video-item">
+                <div>
+                    <img [src]="video.snippet.thumbnails.medium.url" alt="{{ video.snippet.title }}">
+                </div>
+           
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <!-- Cast members -->
+    <div class="row custom-container">
+      <div class="col-md-6">
+        <h3>Cast</h3>
+        <div class="list-cast">
+          <div *ngFor="let castMember of movie.cast" >
+            <div class="cast">
+                <img src="https://t3.ftcdn.net/jpg/05/53/79/60/360_F_553796090_XHrE6R9jwmBJUMo9HKl41hyHJ5gqt9oz.jpg"/>
+                {{ castMember }}
+            </div>
+        </div>
+    </div>
+      </div>
+    </div>
+    
+    <!-- Review section -->
+    <div class="custom-container">
+        <div class="row-w-100">
+          <div class="col-md-6-w-100">
+            <h3>Reviews</h3>
+            <div class="reviews">
+              <div class="card mb-3">
+                <div class="card-body">
+                  <strong class="card-title">Alex</strong>
+                  <p class="card-text">Awesome movie! Highly recommended.</p>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <strong class="card-title">David</strong>
+                  <p class="card-text">One of the best movies I've ever watched.</p>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <strong class="card-title">Samantha</strong>
+                  <p class="card-text">Brilliant performance by the cast.</p>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <strong class="card-title">John</strong>
+                  <p class="card-text">Visually stunning and a gripping storyline.</p>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-body">
+                  <strong class="card-title">Emily</strong>
+                  <p class="card-text">Impressive cinematography and special effects.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+  </div>
+  

@@ -1,0 +1,28 @@
+<!-- movie-section.component.html -->
+<div class="my-5 cont">
+    <h2>Movies</h2>
+    <div>
+      <div class="col-1 d-flex align-items-center">
+        <span class="arrow" (click)="slideLeft()">&lt;</span>
+      </div>
+      <div class="col-10">
+        <carousel [itemsPerSlide]="itemsPerSlide" [singleSlideOffset]="true" [interval]="0" class="carousel-borderless">
+          <slide *ngFor="let movie of movies; let index = index" [class.active]="currentSlideIndex <= index && index < currentSlideIndex + itemsPerSlide">
+            <div class="card card-no-border">
+              <img [src]="movie.imageUrl" class="card-img-top" alt="{{ movie.title }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text">{{ movie.genre }}</p>
+              </div>
+            </div>
+          </slide>
+        </carousel>
+      </div>
+      <div class="col-1 d-flex align-items-center justify-content-end">
+        <span class="arrow" (click)="slideRight()">&gt;</span>
+      </div>
+    </div>
+    
+    
+  </div>
+  

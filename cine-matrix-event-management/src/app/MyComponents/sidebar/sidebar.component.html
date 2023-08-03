@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 sidebar">
+        <div class="filter-section">
+          <button class="filter-title" (click)="toggleDropdown('date')">Date</button>
+          <div class="filter-dropdown" [ngClass]="{'open': dropdown === 'date'}">
+           <div class="flex">
+               <h2>fkldfjifg</h2>
+               <h2>fkldfjifg</h2>
+               <h2>fkldfjifg</h2>
+               <h2>fkldfjifg</h2>
+
+               <h2>fkldfjifg</h2>               <h2>fkldfjifg</h2>               <h2>fkldfjifg</h2>
+          </div>
+        </div>
+        <div class="filter-section">
+          <button class="filter-title" (click)="toggleDropdown('languages')">Languages</button>
+          <div class="filter-dropdown" [ngClass]="{'open': dropdown === 'languages'}">
+            <!-- Language filter options go here -->
+          </div>
+        </div>
+        <div class="filter-section">
+          <button class="filter-title" (click)="toggleDropdown('categories')">Categories</button>
+          <div class="filter-dropdown" [ngClass]="{'open': dropdown === 'categories'}">
+            <!-- Category filter options go here -->
+          </div>
+        </div>
+        <div class="filter-section">
+          <button class="filter-title" (click)="toggleDropdown('price')">Price</button>
+          <div class="filter-dropdown" [ngClass]="{'open': dropdown === 'price'}">
+            <!-- Price filter options go here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <!-- Main content goes here -->
+      </div>
+    </div>
+  </div>
+  

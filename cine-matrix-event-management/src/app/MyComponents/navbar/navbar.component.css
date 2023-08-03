@@ -1,10 +1,11 @@
 /* navbar.component.css */
-.navbar {
+.navbarbg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: #021527;
   padding: 10px;
+  color: #ffffff ;
 }
 
 .navbar-logo {

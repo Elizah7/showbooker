@@ -1,0 +1,49 @@
+.rate-section {
+  margin-top: 30px;
+}
+
+.rating {
+  font-size: 24px;
+  margin-bottom: 10px;
+
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.star::before {
+  content: '\2605'; /* Unicode star symbol */
+}
+
+.star.active::before {
+  content: '\2605'; /* Unicode star symbol (filled) */
+  color: #f0ad4e; /* Star color for active stars */
+}
+.star {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.star.active {
+  transform: scale(1.2);
+}
+.starsrating{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btnrating{
+  margin: auto;
+}
+.btn{
+  margin-top: 5%;
+  background-color: #f0ad4e;
+  color: white;
+}

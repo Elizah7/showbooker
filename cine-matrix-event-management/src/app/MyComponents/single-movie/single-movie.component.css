@@ -1,0 +1,132 @@
+/* Adjust the layout on smaller screens */
+@media (max-width: 768px) {
+    .col-md-6 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Center align the movie image on smaller screens */
+  @media (max-width: 576px) {
+    .col-md-6 img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Increase font size for better readability on smaller screens */
+  @media (max-width: 576px) {
+    h2, h3 {
+      font-size: 18px;
+    }
+  }
+  
+  /* Reduce padding on smaller screens */
+  @media (max-width: 576px) {
+    .container {
+      padding: 15px;
+    }
+  }
+  .videos-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    width:100%;
+  }
+  
+  .video-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .video-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .cont{
+    width: 100%;
+
+  }
+.cast{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.cast img{
+  width: 50%;
+}
+.list-cast{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+}
+.reviews{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1%;
+}
+.reviews>div{
+    width: 100%;
+}
+
+.custom-container {
+    width: 100%;
+    padding-right: 3%;
+    padding-left: 3%;
+    /* border: 1px solid red; */
+  }
+  
+  @media (min-width: 576px) {
+    .custom-container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .custom-container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .custom-container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-container {
+      max-width: 1140px;
+    }
+  }
+  .movie-details {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+ /* Add some padding to the section if needed */
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent background for better readability */
+  }
+  .custom-btn{
+    margin-top: 5%;
+  }

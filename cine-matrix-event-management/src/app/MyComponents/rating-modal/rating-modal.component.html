@@ -1,0 +1,10 @@
+<div class="rating container-w-100">
+    <div class="starsrating">
+        <h2>Give the Rating out of 5 stars</h2>
+        <div class="btnrating">
+            <button *ngFor="let star of stars" class="star" [class.active]="star <= userRating"
+                (click)="onStarClick(star)"></button>
+        </div>
+        <button class="btn" (click)="onRatingSubmit()">Submit</button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  .filter-section {
+    margin-bottom: 15px;
+  }
+  
+  .filter-title {
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .filter-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .filter-dropdown.open {
+    max-height: 300px; /* Change this value based on your content height */
+  }
+  

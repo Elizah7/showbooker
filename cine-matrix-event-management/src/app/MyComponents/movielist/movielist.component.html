@@ -1,0 +1,18 @@
+<div class="">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let movie of movies">
+        <a [routerLink]="['/movies',movie._id]" class="a_link">
+          <div class="card mb-4">
+            <img src="{{ movie.image }}" alt="{{ movie.title }}" class="card-img-top cardimg" />
+            <div class="card-body">
+              <h5 class="card-title">{{ movie.title }}</h5>
+              <p class="card-text">{{ movie.director }}</p>
+              <p class="card-text">{{ movie.language }}</p>
+              <!-- <p class="card-text">Timings: {{ movie.timings.join(', ') }}</p> -->
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
